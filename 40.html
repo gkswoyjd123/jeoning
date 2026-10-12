@@ -1,13 +1,13 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><title>40일차 시간 이동</title>
-<style>body{font-family:sans-serif;margin:0;padding:10px;background:#111;color:#fff}iframe{width:100%;height:75vh;border:0;background:#000}button{margin:6px 6px 0 0;padding:10px 14px;font-size:16px;border:0;border-radius:8px;background:#4a6cf7;color:#fff;cursor:pointer}input{font-size:16px;width:110px;padding:8px}#wrap{position:relative}#wrap:fullscreen{background:#000}#wrap:fullscreen iframe{height:100vh}#wrap:fullscreen #bar{position:absolute;left:0;right:0;bottom:60px;text-align:center;opacity:.35}#wrap:fullscreen #bar:hover{opacity:1}#fs{background:#2ecc71}</style></head><body>
+<style>body{font-family:sans-serif;margin:0;padding:10px;background:#111;color:#fff}iframe{width:100%;height:75vh;border:0;background:#000}button{margin:6px 6px 0 0;padding:10px 14px;font-size:16px;border:0;border-radius:8px;background:#4a6cf7;color:#fff;cursor:pointer}input{font-size:16px;width:110px;padding:8px}#wrap{display:flex;gap:6px}#wrap iframe{flex:1}#bar{width:150px;display:flex;flex-direction:column}#bar button{margin:4px 0;font-size:14px;padding:8px}#wrap:fullscreen{background:#000}#wrap:fullscreen iframe{height:100vh}#fs{background:#2ecc71}</style></head><body>
 <b>신입40일차)져닝왔오</b>
 <div id="wrap"><iframe id="v" allow="autoplay; fullscreen" allowfullscreen src="https://vod.sooplive.com/player/206973699/embed?change_second=1477"></iframe>
-<div id="bar"><button id="fs" onclick="fs()">⛶ 전체화면</button><button onclick="go(1477)">0:24:37 우유 91</button><button onclick="go(6488)">1:48:08 우유 91</button><button onclick="go(6618)">1:50:18 우유 91</button><button onclick="go(13895)">3:51:35 우유 91</button><button onclick="go(14347)">3:59:07 우유 91</button>
-</div></div>
+<div id="bar"><button id="fs" onclick="fs()">⛶ 전체화면</button><button onclick="go(1477)">1. 0:24:37 우유 91</button><button onclick="go(6488)">2. 1:48:08 우유 91</button><button onclick="go(6618)">3. 1:50:18 우유 91</button><button onclick="go(13895)">4. 3:51:35 우유 91</button><button onclick="go(14347)">5. 3:59:07 우유 91</button></div></div>
 <script>
 function go(s){document.getElementById('v').src='https://vod.sooplive.com/player/206973699/embed?change_second='+s+'&_='+Date.now()}
 function goT(){var s=0;document.getElementById('t').value.split(':').forEach(function(x){s=s*60+Number(x)});go(s)}
 function tab(x){window.open("https://vod.sooplive.co.kr/player/206973699?change_second="+x,"soopvod")}
 function tabT(){var s=0;document.getElementById("t").value.split(":").forEach(function(x){s=s*60+Number(x)});tab(s)}
 function fs(){var w=document.getElementById("wrap");if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}
+var T=[1477,6488,6618,13895,14347];document.addEventListener("keydown",function(e){var n=parseInt(e.key);if(n>=1&&n<=T.length)go(T[n-1])});
 </script></body></html>
