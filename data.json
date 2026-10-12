@@ -478,6 +478,32 @@
      "thumb": "img/42_7362.jpg"
     }
    ]
+  },
+  {
+   "day": 43,
+   "vod": 207477125,
+   "title": "신입43일차 자연산 g컵 자동으로 낮에서 밤방으로바뀌는마법",
+   "date": "2026-09-18",
+   "reactions": [
+    {
+     "sec": 3261,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/43_3261.jpg"
+    },
+    {
+     "sec": 7804,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/43_7804.jpg"
+    },
+    {
+     "sec": 12860,
+     "label": "슴흔들 시그모음 500",
+     "type": "sig",
+     "thumb": "img/43_12860.jpg"
+    }
+   ]
   }
  ]
 }
