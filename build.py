@@ -47,7 +47,7 @@ def main():
     nums = [d["day"] for d in days]; cards = ""
     for d in days:
         n = d["day"]
-        prev, nxt = (n - 1 if n - 1 in nums else None), (n + 1 if n + 1 in nums else None)
+        i = nums.index(n); prev, nxt = (nums[i - 1] if i > 0 else None), (nums[i + 1] if i + 1 < len(nums) else None)
         open(os.path.join(D, "%d.html" % n), "w", encoding="utf-8").write(page(d, prev, nxt))
         th = next((r["thumb"] for r in d["reactions"] if r.get("thumb")), "")
         cards += f'<a class="card" href="{n}.html">{"<img src=%s alt=>" % e(th) if th else "<img alt=>"}<div><div class="d">{n}일차</div>{e(d["title"])}<br><span class="meta">{e(d["date"])} · 리액션 {len(d["reactions"])}개</span></div></a>'

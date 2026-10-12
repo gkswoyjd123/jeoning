@@ -1,0 +1,27 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>신입26일차)ㄱㅏ[슴]단 져닝 에휴</title><style>body{margin:0;padding:14px;background:#0f1115;color:#eee;font-family:'Malgun Gothic',sans-serif}
+a{color:#9cf;text-decoration:none}
+.hd{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.hd h1{font-size:20px;margin:0}.meta{color:#aaa;font-size:14px}.cnt{background:#3b82f6;color:#fff;border-radius:12px;padding:2px 10px;font-size:13px}
+.nav{margin-left:auto;display:flex;gap:6px}.nav a,.nav span{padding:6px 12px;border-radius:8px;background:#222;font-size:14px}.nav span{color:#555}
+#wrap{background:#000}#wrap iframe{width:100%;height:72vh;border:0;display:block}#wrap:fullscreen{padding:0}#wrap:fullscreen iframe{height:100vh}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+button{border:2px solid transparent;border-radius:10px;color:#fff;cursor:pointer;font-size:14px;padding:6px;display:flex;flex-direction:column;align-items:flex-start;gap:4px;background:var(--c);opacity:.85;transition:.15s}
+button:hover{opacity:1}button.on{opacity:1;border-color:#fff;box-shadow:0 0 0 3px var(--c),0 0 14px var(--c);transform:translateY(-2px)}
+button img{width:160px;border-radius:6px;display:block}button b{background:#fff;color:var(--c);border-radius:4px;padding:0 6px;margin-right:4px}
+#fs{--c:#22c55e;justify-content:center;padding:10px 16px;align-self:stretch}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.card{background:#1a1d24;border-radius:12px;overflow:hidden;color:#eee;transition:.15s}.card:hover{transform:translateY(-3px);box-shadow:0 6px 18px #000}
+.card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#000}.card div{padding:10px}.card .d{font-size:18px;font-weight:bold}</style></head><body>
+<div class="hd"><a href="index.html">← 목록</a><h1>신입26일차)ㄱㅏ[슴]단 져닝 에휴</h1><span class="meta">2026-08-29</span><span class="cnt">리액션 3개</span>
+<div class="nav"><a href="25.html">◀ 이전 일차</a><a href="27.html">다음 일차 ▶</a></div></div>
+<div id="wrap"><iframe id="v" allow="autoplay; fullscreen" allowfullscreen src="https://vod.sooplive.com/player/205594125/embed?change_second=1757&autoPlay=true&autoplay=1"></iframe></div>
+<div class="bar"><button id="fs" onclick="fs()">⛶ 전체화면</button><button style="--c:#3b82f6" onclick="go(0)"><img src="img/26_1757.jpg" alt=""><span><b>1</b>0:29:17 우유 91</span></button><button style="--c:#38bdf8" onclick="go(1)"><img src="img/26_8205.jpg" alt=""><span><b>2</b>2:16:45 간바레 151</span></button><button style="--c:#3b82f6" onclick="go(2)"><img src="img/26_8880.jpg" alt=""><span><b>3</b>2:28:00 우유 91</span></button></div>
+<script>
+var T=[1757, 8205, 8880],B=document.querySelectorAll('.bar button:not(#fs)');
+var cur=-1,base=1757,t0=Date.now();
+function load(sec){sec=Math.max(0,Math.floor(sec));base=sec;t0=Date.now();document.getElementById('v').src='https://vod.sooplive.com/player/205594125/embed?change_second='+sec+'&autoPlay=true&autoplay=1&_='+Date.now();setTimeout(function(){window.focus()},300)}
+function go(i){cur=i;load(T[i]);B.forEach(function(b,j){b.classList.toggle('on',j===i)})}
+function fs(){var w=document.getElementById('wrap');if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}
+setInterval(function(){var f=document.getElementById('v');if(document.activeElement===f){f.blur();window.focus()}},400);
+document.addEventListener('keydown',function(e){if(!T.length)return;if(e.key==='1'){go(cur<0?0:(cur+1)%T.length)}else if(e.key==='2'){go(cur<0?T.length-1:(cur-1+T.length)%T.length)}else if(e.key==='3'){load(base+(Date.now()-t0)/1000+5)}else if(e.key==='4'){load(base+(Date.now()-t0)/1000-5)}});
+</script></body></html>

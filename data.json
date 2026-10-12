@@ -1,6 +1,392 @@
-{"days":[{"day":40,"vod":206973699,"title":"신입40일차)져닝왔오","date":"2026-09-13","reactions":[
-{"sec":1477,"label":"우유 91","type":"milk","thumb":"img/40_1477.jpg"},
-{"sec":6488,"label":"우유 91","type":"milk","thumb":"img/40_6488.jpg"},
-{"sec":6618,"label":"우유 91","type":"milk","thumb":"img/40_6618.jpg"},
-{"sec":13895,"label":"우유 91","type":"milk","thumb":"img/40_13895.jpg"},
-{"sec":14347,"label":"우유 91","type":"milk","thumb":"img/40_14347.jpg"}]}]}
+{
+"days": [
+{
+"day": 25,
+"vod": 205511665,
+"title": "찐신입25일차)져닝헤응",
+"date": "2026-08-28",
+"reactions": [
+{
+"sec": 4572,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_4572.jpg"
+},
+{
+"sec": 8996,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/25_8996.jpg"
+},
+{
+"sec": 9138,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/25_9138.jpg"
+},
+{
+"sec": 9202,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_9202.jpg"
+},
+{
+"sec": 9266,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_9266.jpg"
+},
+{
+"sec": 10542,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_10542.jpg"
+},
+{
+"sec": 10782,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_10782.jpg"
+},
+{
+"sec": 11382,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_11382.jpg"
+},
+{
+"sec": 11802,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_11802.jpg"
+},
+{
+"sec": 12462,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_12462.jpg"
+},
+{
+"sec": 14082,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_14082.jpg"
+},
+{
+"sec": 14142,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/25_14142.jpg"
+}
+]
+},
+{
+"day": 26,
+"vod": 205594125,
+"title": "신입26일차)ㄱㅏ[슴]단 져닝 에휴",
+"date": "2026-08-29",
+"reactions": [
+{
+"sec": 1757,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/26_1757.jpg"
+},
+{
+"sec": 8205,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/26_8205.jpg"
+},
+{
+"sec": 8880,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/26_8880.jpg"
+}
+]
+},
+{
+"day": 27,
+"vod": 205703127,
+"title": "찐신입27일차) [슴]여기ㄱ ㅐ 뜨거움",
+"date": "2026-08-30",
+"reactions": [
+{
+"sec": 852,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/27_852.jpg"
+},
+{
+"sec": 1653,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/27_1653.jpg"
+},
+{
+"sec": 12608,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/27_12608.jpg"
+},
+{
+"sec": 21120,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/27_21120.jpg"
+}
+]
+},
+{
+"day": 28,
+"vod": 205799365,
+"title": "찐신입28일차)자연치치 여기야여기~!",
+"date": "2026-08-31",
+"reactions": [
+{
+"sec": 4778,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/28_4778.jpg"
+},
+{
+"sec": 5355,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/28_5355.jpg"
+},
+{
+"sec": 6540,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/28_6540.jpg"
+},
+{
+"sec": 12754,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/28_12754.jpg"
+},
+{
+"sec": 15950,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/28_15950.jpg"
+},
+{
+"sec": 22357,
+"label": "오빠달려붕붕 120",
+"type": "car",
+"thumb": "img/28_22357.jpg"
+}
+]
+},
+{
+"day": 29,
+"vod": 205884961,
+"title": "찐신입29일차)하앙 덥다",
+"date": "2026-09-01",
+"reactions": [
+{
+"sec": 2540,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/29_2540.jpg"
+},
+{
+"sec": 2575,
+"label": "오빠달려붕붕 120(추정)",
+"type": "car",
+"thumb": "img/29_2575.jpg"
+},
+{
+"sec": 4220,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/29_4220.jpg"
+},
+{
+"sec": 4410,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/29_4410.jpg"
+},
+{
+"sec": 4780,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/29_4780.jpg"
+},
+{
+"sec": 4901,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/29_4901.jpg"
+},
+{
+"sec": 5220,
+"label": "슴흔들 시그모음 500",
+"type": "sig",
+"thumb": "img/29_5220.jpg"
+},
+{
+"sec": 5460,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/29_5460.jpg"
+},
+{
+"sec": 6660,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/29_6660.jpg"
+},
+{
+"sec": 7780,
+"label": "슴흔들 시그모음 500",
+"type": "sig",
+"thumb": "img/29_7780.jpg"
+},
+{
+"sec": 10142,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/29_10142.jpg"
+},
+{
+"sec": 10577,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/29_10577.jpg"
+},
+{
+"sec": 12740,
+"label": "슴흔들 시그모음 500",
+"type": "sig",
+"thumb": "img/29_12740.jpg"
+},
+{
+"sec": 13172,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/29_13172.jpg"
+},
+{
+"sec": 15600,
+"label": "오빠달려붕붕 120(추정)",
+"type": "car",
+"thumb": "img/29_15600.jpg"
+},
+{
+"sec": 18795,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/29_18795.jpg"
+}
+]
+},
+{
+"day": 30,
+"vod": 205979127,
+"title": "찐신입30일차)9월시작 져닝이랑",
+"date": "2026-09-02",
+"reactions": [
+{
+"sec": 6635,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/30_6635.jpg"
+},
+{
+"sec": 13132,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/30_13132.jpg"
+}
+]
+},
+{
+"day": 31,
+"vod": 206067887,
+"title": "찐신입31일차)자연가[슴]",
+"date": "2026-09-03",
+"reactions": [
+{
+"sec": 3720,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/31_3720.jpg"
+},
+{
+"sec": 5930,
+"label": "간바레 151",
+"type": "ganbare",
+"thumb": "img/31_5930.jpg"
+},
+{
+"sec": 6930,
+"label": "슴흔들 시그모음 500",
+"type": "sig",
+"thumb": "img/31_6930.jpg"
+},
+{
+"sec": 7260,
+"label": "슴흔들 시그모음 500",
+"type": "sig",
+"thumb": "img/31_7260.jpg"
+},
+{
+"sec": 10135,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/31_10135.jpg"
+},
+{
+"sec": 13357,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/31_13357.jpg"
+}
+]
+},
+{
+"day": 40,
+"vod": 206973699,
+"title": "신입40일차)져닝왔오",
+"date": "2026-09-13",
+"reactions": [
+{
+"sec": 1477,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/40_1477.jpg"
+},
+{
+"sec": 6488,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/40_6488.jpg"
+},
+{
+"sec": 6618,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/40_6618.jpg"
+},
+{
+"sec": 13895,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/40_13895.jpg"
+},
+{
+"sec": 14347,
+"label": "우유 91",
+"type": "milk",
+"thumb": "img/40_14347.jpg"
+}
+]
+}
+]
+}
