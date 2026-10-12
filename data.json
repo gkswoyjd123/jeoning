@@ -698,6 +698,50 @@
      "thumb": "img/44_19922.jpg"
     }
    ]
+  },
+  {
+   "day": 45,
+   "vod": 207931139,
+   "title": "신입45일차) 놀쟈아아 겍들어와아아",
+   "date": "2026-09-23",
+   "reactions": [
+    {
+     "sec": 330,
+     "label": "간바레 151 연속 3개",
+     "type": "ganbare",
+     "thumb": "img/45_330.jpg"
+    },
+    {
+     "sec": 2045,
+     "label": "간바레 151",
+     "type": "ganbare",
+     "thumb": "img/45_2045.jpg"
+    },
+    {
+     "sec": 4681,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/45_4681.jpg"
+    },
+    {
+     "sec": 7411,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/45_7411.jpg"
+    },
+    {
+     "sec": 11390,
+     "label": "슴흔들 시그모음 500",
+     "type": "sig",
+     "thumb": "img/45_11390.jpg"
+    },
+    {
+     "sec": 11570,
+     "label": "슴흔들 시그모음 500",
+     "type": "sig",
+     "thumb": "img/45_11570.jpg"
+    }
+   ]
   }
  ]
 }
