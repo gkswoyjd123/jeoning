@@ -13,10 +13,10 @@ a{color:#9cf;text-decoration:none}
 .nav{margin-left:auto;display:flex;gap:6px}.nav a,.nav span{padding:6px 12px;border-radius:8px;background:#222;font-size:14px}.nav span{color:#555}
 #wrap{background:#000}#wrap iframe{width:100%;height:72vh;border:0;display:block}#wrap:fullscreen{padding:0}#wrap:fullscreen iframe{height:100vh}
 .bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-button{border:2px solid transparent;border-radius:10px;color:#fff;cursor:pointer;font-size:14px;padding:6px;display:flex;flex-direction:column;align-items:flex-start;gap:4px;background:var(--c);opacity:.85;transition:.15s}
+button{border:2px solid transparent;border-radius:10px;color:#fff;cursor:pointer;font-size:14px;padding:6px;display:flex;flex-direction:column;align-items:stretch;gap:4px;background:var(--c);opacity:.85;transition:.15s;min-width:0;max-width:172px;text-align:left}
 button:hover{opacity:1}button.on{opacity:1;border-color:#fff;box-shadow:0 0 0 3px var(--c),0 0 14px var(--c);transform:translateY(-2px)}
-button img{width:160px;border-radius:6px;display:block}button b{background:#fff;color:var(--c);border-radius:4px;padding:0 6px;margin-right:4px}
-#fs{--c:#22c55e;justify-content:center;padding:10px 16px;align-self:stretch}
+button img{width:160px;max-width:100%;border-radius:6px;display:block}button > span{display:block;white-space:normal;word-break:keep-all;overflow-wrap:anywhere;min-width:0;line-height:1.35}button b{background:#fff;color:var(--c);border-radius:4px;padding:0 6px;margin-right:4px}button > span small{display:block;opacity:.9;font-size:12px;margin-top:2px}
+#fs{--c:#22c55e;justify-content:center;padding:10px 16px;align-self:stretch;max-width:none;text-align:center;align-items:center}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
 .card{background:#1a1d24;border-radius:12px;overflow:hidden;color:#eee;transition:.15s}.card:hover{transform:translateY(-3px);box-shadow:0 6px 18px #000}
 .card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#000}.card div{padding:10px}.card .d{font-size:18px;font-weight:bold}"""
@@ -25,7 +25,11 @@ def page(d, prev, nxt):
     btns = ""
     for i, r in enumerate(rs, 1):
         img = '<img src="%s" alt="">' % e(r["thumb"]) if r.get("thumb") else ""
-        btns += '<button style="--c:%s" onclick="go(%d)">%s<span><b>%d</b>%s %s</span></button>' % (COL.get(r["type"], "#666"), i - 1, img, i, hms(r["sec"]), e(r["label"]))
+        lab, note = r["label"], ""
+        if " (" in lab and lab.endswith(")"):
+            j = lab.rfind(" ("); note, lab = lab[j + 1 :], lab[:j]
+        note_html = "<small>%s</small>" % e(note) if note else ""
+        btns += '<button style="--c:%s" onclick="go(%d)">%s<span><b>%d</b>%s %s%s</span></button>' % (COL.get(r["type"], "#666"), i - 1, img, i, hms(r["sec"]), e(lab), note_html)
     nav = lambda x, t: '<a href="%d.html">%s</a>' % (x, t) if x else '<span>%s</span>' % t
     first = rs[0]["sec"] if rs else 0
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{e(d['title'])}</title><style>{CSS}</style></head><body>
