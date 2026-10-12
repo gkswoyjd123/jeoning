@@ -17,10 +17,10 @@ button img{width:160px;border-radius:6px;display:block}button b{background:#fff;
 <div id="wrap"><iframe id="v" allow="autoplay; fullscreen" allowfullscreen src="https://vod.sooplive.com/player/205799365/embed?change_second=4778&autoPlay=true&autoplay=1"></iframe></div>
 <div class="bar"><button id="fs" onclick="fs()">⛶ 전체화면</button><button style="--c:#3b82f6" onclick="go(0)"><img src="img/28_4778.jpg" alt=""><span><b>1</b>1:19:38 우유 91</span></button><button style="--c:#3b82f6" onclick="go(1)"><img src="img/28_5355.jpg" alt=""><span><b>2</b>1:29:15 우유 91</span></button><button style="--c:#3b82f6" onclick="go(2)"><img src="img/28_6540.jpg" alt=""><span><b>3</b>1:49:00 우유 91</span></button><button style="--c:#3b82f6" onclick="go(3)"><img src="img/28_12754.jpg" alt=""><span><b>4</b>3:32:34 우유 91</span></button><button style="--c:#3b82f6" onclick="go(4)"><img src="img/28_15950.jpg" alt=""><span><b>5</b>4:25:50 우유 91</span></button><button style="--c:#ec4899" onclick="go(5)"><img src="img/28_22357.jpg" alt=""><span><b>6</b>6:12:37 오빠달려붕붕 120</span></button></div>
 <script>
-var T=[4778, 5355, 6540, 12754, 15950, 22357],B=document.querySelectorAll('.bar button:not(#fs)');
+var T=[4778, 5355, 6540, 12754, 15950, 22357],V=["205799365", "205799365", "205799365", "205799365", "205799365", "205799365"],cv='205799365',B=document.querySelectorAll('.bar button:not(#fs)');
 var cur=-1,base=4778,t0=Date.now();
-function load(sec){sec=Math.max(0,Math.floor(sec));base=sec;t0=Date.now();document.getElementById('v').src='https://vod.sooplive.com/player/205799365/embed?change_second='+sec+'&autoPlay=true&autoplay=1&_='+Date.now();setTimeout(function(){window.focus()},300)}
-function go(i){cur=i;load(T[i]);B.forEach(function(b,j){b.classList.toggle('on',j===i)})}
+function load(sec,vv){if(vv)cv=vv;sec=Math.max(0,Math.floor(sec));base=sec;t0=Date.now();document.getElementById('v').src='https://vod.sooplive.com/player/'+cv+'/embed?change_second='+sec+'&autoPlay=true&autoplay=1&_='+Date.now();setTimeout(function(){window.focus()},300)}
+function go(i){cur=i;load(T[i],V[i]);B.forEach(function(b,j){b.classList.toggle('on',j===i)})}
 function fs(){var w=document.getElementById('wrap');if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}
 setInterval(function(){var f=document.getElementById('v');if(document.activeElement===f){f.blur();window.focus()}},400);
 document.addEventListener('keydown',function(e){if(!T.length)return;if(e.key==='1'){go(cur<0?0:(cur+1)%T.length)}else if(e.key==='2'){go(cur<0?T.length-1:(cur-1+T.length)%T.length)}else if(e.key==='3'){load(base+(Date.now()-t0)/1000+5)}else if(e.key==='4'){load(base+(Date.now()-t0)/1000-5)}});

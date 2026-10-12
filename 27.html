@@ -17,10 +17,10 @@ button img{width:160px;border-radius:6px;display:block}button b{background:#fff;
 <div id="wrap"><iframe id="v" allow="autoplay; fullscreen" allowfullscreen src="https://vod.sooplive.com/player/205703127/embed?change_second=852&autoPlay=true&autoplay=1"></iframe></div>
 <div class="bar"><button id="fs" onclick="fs()">⛶ 전체화면</button><button style="--c:#3b82f6" onclick="go(0)"><img src="img/27_852.jpg" alt=""><span><b>1</b>0:14:12 우유 91</span></button><button style="--c:#3b82f6" onclick="go(1)"><img src="img/27_1653.jpg" alt=""><span><b>2</b>0:27:33 우유 91</span></button><button style="--c:#3b82f6" onclick="go(2)"><img src="img/27_12608.jpg" alt=""><span><b>3</b>3:30:08 우유 91</span></button><button style="--c:#3b82f6" onclick="go(3)"><img src="img/27_21120.jpg" alt=""><span><b>4</b>5:52:00 우유 91</span></button></div>
 <script>
-var T=[852, 1653, 12608, 21120],B=document.querySelectorAll('.bar button:not(#fs)');
+var T=[852, 1653, 12608, 21120],V=["205703127", "205703127", "205703127", "205703127"],cv='205703127',B=document.querySelectorAll('.bar button:not(#fs)');
 var cur=-1,base=852,t0=Date.now();
-function load(sec){sec=Math.max(0,Math.floor(sec));base=sec;t0=Date.now();document.getElementById('v').src='https://vod.sooplive.com/player/205703127/embed?change_second='+sec+'&autoPlay=true&autoplay=1&_='+Date.now();setTimeout(function(){window.focus()},300)}
-function go(i){cur=i;load(T[i]);B.forEach(function(b,j){b.classList.toggle('on',j===i)})}
+function load(sec,vv){if(vv)cv=vv;sec=Math.max(0,Math.floor(sec));base=sec;t0=Date.now();document.getElementById('v').src='https://vod.sooplive.com/player/'+cv+'/embed?change_second='+sec+'&autoPlay=true&autoplay=1&_='+Date.now();setTimeout(function(){window.focus()},300)}
+function go(i){cur=i;load(T[i],V[i]);B.forEach(function(b,j){b.classList.toggle('on',j===i)})}
 function fs(){var w=document.getElementById('wrap');if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}
 setInterval(function(){var f=document.getElementById('v');if(document.activeElement===f){f.blur();window.focus()}},400);
 document.addEventListener('keydown',function(e){if(!T.length)return;if(e.key==='1'){go(cur<0?0:(cur+1)%T.length)}else if(e.key==='2'){go(cur<0?T.length-1:(cur-1+T.length)%T.length)}else if(e.key==='3'){load(base+(Date.now()-t0)/1000+5)}else if(e.key==='4'){load(base+(Date.now()-t0)/1000-5)}});
