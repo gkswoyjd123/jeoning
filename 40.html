@@ -5,12 +5,12 @@ button{margin:6px 6px 0 0;padding:9px 13px;font-size:15px;border:0;border-radius
 button b{background:#fff;color:#4a6cf7;border-radius:4px;padding:0 6px;margin-right:4px}#fs{background:#2ecc71}
 p{color:#999;font-size:13px}</style></head><body>
 <b>신입40일차)져닝왔오</b>
-<div id="wrap"><iframe id="v" allow="autoplay; fullscreen" allowfullscreen src="https://vod.sooplive.com/player/206973699/embed?change_second=1477"></iframe></div>
+<div id="wrap"><iframe id="v" allow="autoplay; fullscreen" allowfullscreen src="https://vod.sooplive.com/player/206973699/embed?change_second=1477&autoPlay=true&autoplay=1"></iframe></div>
 <div><button id="fs" onclick="fs()">⛶ 전체화면</button><button onclick="go(1477)"><b>1</b> 0:24:37 우유 91</button><button onclick="go(6488)"><b>2</b> 1:48:08 우유 91</button><button onclick="go(6618)"><b>3</b> 1:50:18 우유 91</button><button onclick="go(13895)"><b>4</b> 3:51:35 우유 91</button><button onclick="go(14347)"><b>5</b> 3:59:07 우유 91</button></div>
 <p>숫자 키 1~5로 바로 이동(전체화면에서도 돼요). 영상을 클릭한 뒤 안 먹히면 영상 밖을 한 번 눌러 주세요.</p>
 <script>
 var T=[1477,6488,6618,13895,14347];
-function go(x){document.getElementById('v').src='https://vod.sooplive.com/player/206973699/embed?change_second='+x+'&_='+Date.now();setTimeout(function(){window.focus()},300)}
+function go(x){document.getElementById('v').src='https://vod.sooplive.com/player/206973699/embed?change_second='+x+'&autoPlay=true&autoplay=1&_='+Date.now();setTimeout(function(){window.focus()},300)}
 function fs(){var w=document.getElementById('wrap');if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}
 setInterval(function(){var f=document.getElementById('v');if(document.activeElement===f){f.blur();window.focus()}},400);
 document.addEventListener('keydown',function(e){var n=parseInt(e.key);if(n>=1&&n<=T.length)go(T[n-1])});
