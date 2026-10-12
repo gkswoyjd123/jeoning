@@ -35,10 +35,12 @@ def page(d, prev, nxt):
 <div class="bar"><button id="fs" onclick="fs()">⛶ 전체화면</button>{btns}</div>
 <script>
 var T={json.dumps([r['sec'] for r in rs])},B=document.querySelectorAll('.bar button:not(#fs)');
-function go(i){{document.getElementById('v').src='https://vod.sooplive.com/player/{v}/embed?change_second='+T[i]+'&autoPlay=true&autoplay=1&_='+Date.now();B.forEach(function(b,j){{b.classList.toggle('on',j===i)}});setTimeout(function(){{window.focus()}},300)}}
+var cur=-1,base={first},t0=Date.now();
+function load(sec){{sec=Math.max(0,Math.floor(sec));base=sec;t0=Date.now();document.getElementById('v').src='https://vod.sooplive.com/player/{v}/embed?change_second='+sec+'&autoPlay=true&autoplay=1&_='+Date.now();setTimeout(function(){{window.focus()}},300)}}
+function go(i){{cur=i;load(T[i]);B.forEach(function(b,j){{b.classList.toggle('on',j===i)}})}}
 function fs(){{var w=document.getElementById('wrap');if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}}
 setInterval(function(){{var f=document.getElementById('v');if(document.activeElement===f){{f.blur();window.focus()}}}},400);
-document.addEventListener('keydown',function(e){{var n=parseInt(e.key);if(n>=1&&n<=T.length)go(n-1)}});
+document.addEventListener('keydown',function(e){{if(!T.length)return;if(e.key==='1'){{go(cur<0?0:(cur+1)%T.length)}}else if(e.key==='2'){{go(cur<0?T.length-1:(cur-1+T.length)%T.length)}}else if(e.key==='3'){{load(base+(Date.now()-t0)/1000+5)}}}});
 </script></body></html>"""
 def main():
     days = sorted(json.load(open(os.path.join(D, "data.json"), encoding="utf-8"))["days"], key=lambda x: x["day"])
