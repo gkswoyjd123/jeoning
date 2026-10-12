@@ -40,7 +40,7 @@ function load(sec){{sec=Math.max(0,Math.floor(sec));base=sec;t0=Date.now();docum
 function go(i){{cur=i;load(T[i]);B.forEach(function(b,j){{b.classList.toggle('on',j===i)}})}}
 function fs(){{var w=document.getElementById('wrap');if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}}
 setInterval(function(){{var f=document.getElementById('v');if(document.activeElement===f){{f.blur();window.focus()}}}},400);
-document.addEventListener('keydown',function(e){{if(!T.length)return;if(e.key==='1'){{go(cur<0?0:(cur+1)%T.length)}}else if(e.key==='2'){{go(cur<0?T.length-1:(cur-1+T.length)%T.length)}}else if(e.key==='3'){{load(base+(Date.now()-t0)/1000+5)}}}});
+document.addEventListener('keydown',function(e){{if(!T.length)return;if(e.key==='1'){{go(cur<0?0:(cur+1)%T.length)}}else if(e.key==='2'){{go(cur<0?T.length-1:(cur-1+T.length)%T.length)}}else if(e.key==='3'){{load(base+(Date.now()-t0)/1000+5)}}else if(e.key==='4'){{load(base+(Date.now()-t0)/1000-5)}}}});
 </script></body></html>"""
 def main():
     days = sorted(json.load(open(os.path.join(D, "data.json"), encoding="utf-8"))["days"], key=lambda x: x["day"])
