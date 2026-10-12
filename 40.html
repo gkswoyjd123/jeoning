@@ -1,6 +1,6 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><title>신입40일차)져닝왔오</title>
 <style>body{margin:0;padding:10px;background:#111;color:#eee;font-family:sans-serif}
-#wrap{background:#000}#wrap iframe{width:100%;height:75vh;border:0;display:block}#wrap:fullscreen iframe{height:100vh}
+#wrap{background:#000}#wrap iframe{width:100%;height:75vh;border:0;display:block}#wrap:fullscreen{padding:0 0 18px}#wrap:fullscreen iframe{height:calc(100vh - 18px)}
 button{margin:6px 6px 0 0;padding:9px 13px;font-size:15px;border:0;border-radius:8px;background:#4a6cf7;color:#fff;cursor:pointer}
 button b{background:#fff;color:#4a6cf7;border-radius:4px;padding:0 6px;margin-right:4px}#fs{background:#2ecc71}
 p{color:#999;font-size:13px}</style></head><body>
@@ -12,5 +12,6 @@ p{color:#999;font-size:13px}</style></head><body>
 var T=[1477,6488,6618,13895,14347];
 function go(x){document.getElementById('v').src='https://vod.sooplive.com/player/206973699/embed?change_second='+x+'&_='+Date.now();setTimeout(function(){window.focus()},300)}
 function fs(){var w=document.getElementById('wrap');if(document.fullscreenElement)document.exitFullscreen();else w.requestFullscreen()}
+setInterval(function(){var f=document.getElementById('v');if(document.activeElement===f){f.blur();window.focus()}},400);
 document.addEventListener('keydown',function(e){var n=parseInt(e.key);if(n>=1&&n<=T.length)go(T[n-1])});
 </script></body></html>
