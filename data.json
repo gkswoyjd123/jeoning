@@ -794,6 +794,44 @@
      "thumb": "img/47_7420.jpg"
     }
    ]
+  },
+  {
+   "day": 48,
+   "vod": 208280065,
+   "title": "신입48일차)애청자만명기념 의상 좀 뜨겁네?",
+   "date": "2026-09-27",
+   "reactions": [
+    {
+     "sec": 2205,
+     "label": "간바레 151",
+     "type": "ganbare",
+     "thumb": "img/48_2205.jpg"
+    },
+    {
+     "sec": 2866,
+     "label": "간바레 151 연속 4개 (0:47:46~0:50:06)",
+     "type": "ganbare",
+     "thumb": "img/48_2866.jpg"
+    },
+    {
+     "sec": 4160,
+     "label": "슴흔들 시그모음 500",
+     "type": "sig",
+     "thumb": "img/48_4160.jpg"
+    },
+    {
+     "sec": 5750,
+     "label": "간바레 151",
+     "type": "ganbare",
+     "thumb": "img/48_5750.jpg"
+    },
+    {
+     "sec": 14260,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/48_14260.jpg"
+    }
+   ]
   }
  ]
 }
