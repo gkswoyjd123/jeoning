@@ -902,6 +902,26 @@
      "thumb": "img/50_23250.jpg"
     }
    ]
+  },
+  {
+   "day": 51,
+   "vod": 208540737,
+   "title": "신입51일차)어?져닝왔다",
+   "date": "2026-09-30",
+   "reactions": [
+    {
+     "sec": 9340,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/51_9340.jpg"
+    },
+    {
+     "sec": 9785,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/51_9785.jpg"
+    }
+   ]
   }
  ]
 }
