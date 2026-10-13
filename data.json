@@ -948,6 +948,38 @@
      "thumb": "img/52_7825.jpg"
     }
    ]
+  },
+  {
+   "day": 54,
+   "vod": 208925919,
+   "title": "신입54일차)져닝보러와 ~~",
+   "date": "2026-10-04",
+   "reactions": [
+    {
+     "sec": 945,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/54_945.jpg"
+    },
+    {
+     "sec": 1040,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/54_1040.jpg"
+    },
+    {
+     "sec": 12115,
+     "label": "간바레 151",
+     "type": "ganbare",
+     "thumb": "img/54_12115.jpg"
+    },
+    {
+     "sec": 12300,
+     "label": "오빠달려붕붕 120",
+     "type": "car",
+     "thumb": "img/54_12300.jpg"
+    }
+   ]
   }
  ]
 }
