@@ -762,6 +762,38 @@
      "thumb": "img/46_7270.jpg"
     }
    ]
+  },
+  {
+   "day": 47,
+   "vod": 208187333,
+   "title": "신입47일차)오랜만에 자연G ㄴ템언더붑 히히",
+   "date": "2026-09-26",
+   "reactions": [
+    {
+     "sec": 4115,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/47_4115.jpg"
+    },
+    {
+     "sec": 4290,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/47_4290.jpg"
+    },
+    {
+     "sec": 6020,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/47_6020.jpg"
+    },
+    {
+     "sec": 7420,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/47_7420.jpg"
+    }
+   ]
   }
  ]
 }
