@@ -832,6 +832,38 @@
      "thumb": "img/48_14260.jpg"
     }
    ]
+  },
+  {
+   "day": 49,
+   "vod": 208373355,
+   "title": "신입49일차)맞아요 자연왕치치 입니다만",
+   "date": "2026-09-28",
+   "reactions": [
+    {
+     "sec": 4235,
+     "label": "우유 91 연속 3개 (1:10:35~1:15:20)",
+     "type": "milk",
+     "thumb": "img/49_4235.jpg"
+    },
+    {
+     "sec": 5235,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/49_5235.jpg"
+    },
+    {
+     "sec": 5320,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/49_5320.jpg"
+    },
+    {
+     "sec": 10345,
+     "label": "슴흔들 시그모음 500",
+     "type": "sig",
+     "thumb": "img/49_10345.jpg"
+    }
+   ]
   }
  ]
 }
