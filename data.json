@@ -864,6 +864,44 @@
      "thumb": "img/49_10345.jpg"
     }
    ]
+  },
+  {
+   "day": 50,
+   "vod": 208466081,
+   "title": "신입50일차)ㄴ브라자연 치파오져닝 ㅗㅜㅑ..",
+   "date": "2026-09-29",
+   "reactions": [
+    {
+     "sec": 765,
+     "label": "오빠달려붕붕 120",
+     "type": "car",
+     "thumb": "img/50_765.jpg"
+    },
+    {
+     "sec": 1890,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/50_1890.jpg"
+    },
+    {
+     "sec": 6185,
+     "label": "슴흔들 시그모음 500",
+     "type": "sig",
+     "thumb": "img/50_6185.jpg"
+    },
+    {
+     "sec": 19685,
+     "label": "슴흔들 시그모음 500",
+     "type": "sig",
+     "thumb": "img/50_19685.jpg"
+    },
+    {
+     "sec": 23250,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/50_23250.jpg"
+    }
+   ]
   }
  ]
 }
