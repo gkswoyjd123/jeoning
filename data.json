@@ -1000,6 +1000,32 @@
      "thumb": "img/55_12070.jpg"
     }
    ]
+  },
+  {
+   "day": 56,
+   "vod": 209099103,
+   "title": "신입56일차)자연출렁출렁",
+   "date": "2026-10-06",
+   "reactions": [
+    {
+     "sec": 4900,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/56_4900.jpg"
+    },
+    {
+     "sec": 5660,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/56_5660.jpg"
+    },
+    {
+     "sec": 6665,
+     "label": "우유 91",
+     "type": "milk",
+     "thumb": "img/56_6665.jpg"
+    }
+   ]
   }
  ]
 }
